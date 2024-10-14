@@ -134,6 +134,13 @@
             })
             .then(response => response.json())
             .then(data => {
+                // Sort exercises by the number of words in the instructions in descending order
+                data.sort((a, b) => {
+                    const aWordCount = a.instructions.split(' ').length;
+                    const bWordCount = b.instructions.split(' ').length;
+                    return bWordCount - aWordCount; // Sort by word count
+                });
+
                 const exerciseList = document.getElementById('exercise-list');
                 exerciseList.innerHTML = ''; // Clear any previous results
                 if (data.length > 0) {
