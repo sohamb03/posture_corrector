@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #242221;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('https://www.shutterstock.com/image-illustration/gym-weights-under-strong-dramatic-260nw-472696720.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #000000;
+}
+
+.service-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    width: 30%;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #b51d0a;
+}
+
+.service-box p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.service-box span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
